@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAPA BUMI</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  color:#173b25;
+  background:#f8fff3;
+  line-height:1.6
+}
+header{
+  background:linear-gradient(135deg,#dff6b8,#bce8c9);
+  padding:25px 7% 80px;
+}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1100px;
+  margin:auto;
+}
+.logo{
+  font-size:25px;
+  font-weight:bold;
+  color:#176332;
+}
+nav a{
+  text-decoration:none;
+  color:#174f2b;
+  margin-left:20px;
+  font-weight:bold;
+}
+.hero{
+  max-width:1100px;
+  margin:100px auto 0;
+}
+.badge{
+  display:inline-block;
+  background:white;
+  padding:8px 15px;
+  border-radius:20px;
+  color:#28733d;
+  font-weight:bold;
+}
+h1{
+  font-size:clamp(45px,8vw,80px);
+  line-height:1;
+  margin:25px 0;
+  color:#176332;
+}
+h1 span{color:#2b9b4d}
+.hero p{
+  max-width:600px;
+  font-size:18px;
+  color:#526857;
+}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  margin-right:10px;
+  padding:13px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.primary{background:#208b43;color:white}
+.secondary{background:white;color:#176332}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 7%;
+}
+.heading{text-align:center;margin-bottom:40px}
+.heading small{
+  color:#279148;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+h2{
+  font-size:38px;
+  color:#176332;
+  margin:8px 0;
+}
+.heading p{color:#607164}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+.card{
+  padding:30px;
+  border-radius:22px;
+  background:white;
+  box-shadow:0 8px 30px #174f2b18;
+}
+.card h3{
+  font-size:26px;
+  color:#176332;
+  margin:10px 0;
+}
+.icon{font-size:45px}
+.card p{color:#607164}
+.contoh{
+  margin-top:18px;
+  padding:15px;
+  border-radius:12px;
+  background:#eff9e8;
+}
+.dagusibu{
+  max-width:none;
+  background:#eff9e8;
+}
+.steps{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+.step{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+}
+.step b{
+  display:inline-block;
+  background:#dff5b8;
+  color:#176332;
+  padding:8px 12px;
+  border-radius:50%;
+}
+.step h3{
+  margin:15px 0 7px;
+  color:#176332;
+}
+.step p{font-size:14px;color:#607164}
+.tips{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+.tip{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 20px #174f2b12;
+}
+.tip b{color:#279148}
+.cta{
+  max-width:none;
+  text-align:center;
+  background:#176b38;
+  color:white;
+}
+.cta h2{color:white}
+.cta p{margin-top:10px}
+footer{
+  padding:30px;
+  text-align:center;
+  background:#0f4d28;
+  color:white;
+}
+
+@media(max-width:750px){
+  nav a{display:none}
+  .hero{margin-top:70px}
+  .cards,.steps,.tips{grid-template-columns:1fr}
+  section{padding:55px 6%}
+  h2{font-size:30px}
+}
+</style>
+</head>
+
+<body>
+
+<header id="beranda">
+<nav>
+<div class="logo">🌱 SAPA BUMI</div>
+<div>
+<a href="#tentang">Tentang</a>
+<a href="#sampah">Sampah</a>
+<a href="#dagusibu">DAGUSIBU</a>
+<a href="#tips">Tips</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="badge">🌍 Jaga lingkungan mulai dari diri sendiri</div>
+
+<h1>Sampah Pilah,<br><span>Ramah Bumi.</span></h1>
+
+<p>
+Yuk mulai dari hal kecil: kenali jenis sampah, pilah dengan benar,
+dan jaga lingkungan bersama untuk menciptakan bumi yang lebih bersih dan sehat.
+</p>
+
+<a href="#sampah" class="btn primary">Pelajari Sampah</a>
+<a href="#dagusibu" class="btn secondary">DAGUSIBU</a>
+</div>
+</header>
+
+<section id="tentang">
+<div class="heading">
+<small>TENTANG SAPA BUMI</small>
+<h2>Langkah kecil untuk bumi yang lebih baik</h2>
+<p>
+SAPA BUMI merupakan media edukasi tentang pemilahan sampah,
+pengelolaan lingkungan, serta penggunaan dan pembuangan obat yang benar.
+</p>
+</div>
+</section>
+
+<section id="sampah">
+<div class="heading">
+<small>PENGGOLONGAN SAMPAH</small>
+<h2>Kenali sebelum membuang</h2>
+<p>Pisahkan sampah sesuai jenisnya agar lebih mudah dikelola.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🍃</div>
+<h3>Sampah Organik</h3>
+<p>
+Sampah yang berasal dari makhluk hidup dan mudah terurai secara alami.
+</p>
+<div class="contoh">
+<b>Contoh:</b><br>
+Sisa makanan, daun kering, kulit buah,
+sayuran, ranting dan sisa tumbuhan.
+</div>
+</div>
+
+<div class="card">
+<div class="icon">♻️</div>
+<h3>Sampah Anorganik</h3>
+<p>
+Sampah yang sulit terurai secara alami dan sebagian dapat didaur ulang.
+</p>
+<div class="contoh">
+<b>Contoh:</b><br>
+Botol plastik, kaleng, kaca, kardus
+dan berbagai kemasan.
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="dagusibu" id="dagusibu">
+
+<div class="heading">
+<small>DAGUSIBU</small>
+<h2>Kelola obat dengan bijak</h2>
+<p><b>Dapatkan, Gunakan, Simpan, Buang</b> obat dengan benar.</p>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<b>01</b>
+<h3>DApatkan</h3>
+<p>
+Dapatkan obat di tempat yang resmi dan sesuai kebutuhan.
+Pastikan kemasan dan informasi obat jelas.
+</p>
+</div>
+
+<div class="step">
+<b>02</b>
+<h3>GUnakan</h3>
+<p>
+Gunakan obat sesuai aturan pakai, dosis,
+dan petunjuk tenaga kesehatan.
+</p>
+</div>
+
+<div class="step">
+<b>03</b>
+<h3>SImpan</h3>
+<p>
+Simpan obat sesuai petunjuk dan jauhkan
+dari jangkauan anak-anak.
+</p>
+</div>
+
+<div class="step">
+<b>04</b>
+<h3>BUang</h3>
+<p>
+Obat yang kedaluwarsa atau tidak digunakan
+lagi harus dibuang dengan cara yang tepat.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+
+<div class="heading">
+<small>TIPS MEMILAH SAMPAH</small>
+<h2>Kebiasaan sederhana, dampak besar</h2>
+</div>
+
+<div class="tips">
+
+<div class="tip">🌱 <b>01</b> Pisahkan sampah organik dan anorganik sejak dari rumah.</div>
+
+<div class="tip">♻️ <b>02</b> Bersihkan kemasan yang dapat didaur ulang.</div>
+
+<div class="tip">🛍️ <b>03</b> Kurangi penggunaan barang sekali pakai.</div>
+
+<div class="tip">🔄 <b>04</b> Gunakan kembali barang yang masih layak.</div>
+
+<div class="tip">🚯 <b>05</b> Jangan membuang sampah ke sungai atau sembarang tempat.</div>
+
+<div class="tip">💚 <b>06</b> Ajak keluarga dan teman untuk ikut memilah sampah.</div>
+
+</div>
+</section>
+
+<div class="cta">
+<section>
+<h2>AYO BERSAMA 🌍</h2>
+<p>
+Mulai dari hal kecil untuk bumi yang lebih baik.
+</p>
+<p>
+<b>“Sampah pilah, lingkungan terjaga, hidup lebih sehat.”</b>
+</p>
+</section>
+</div>
+
+<footer>
+🌱 <b>SAPA BUMI</b><br>
+Sampah Pilah, Ramah Bumi
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAPA BUMI</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  color:#173b25;
+  background:#f8fff3;
+  line-height:1.6
+}
+header{
+  background:linear-gradient(135deg,#dff6b8,#bce8c9);
+  padding:25px 7% 80px;
+}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1100px;
+  margin:auto;
+}
+.logo{
+  font-size:25px;
+  font-weight:bold;
+  color:#176332;
+}
+nav a{
+  text-decoration:none;
+  color:#174f2b;
+  margin-left:20px;
+  font-weight:bold;
+}
+.hero{
+  max-width:1100px;
+  margin:100px auto 0;
+}
+.badge{
+  display:inline-block;
+  background:white;
+  padding:8px 15px;
+  border-radius:20px;
+  color:#28733d;
+  font-weight:bold;
+}
+h1{
+  font-size:clamp(45px,8vw,80px);
+  line-height:1;
+  margin:25px 0;
+  color:#176332;
+}
+h1 span{color:#2b9b4d}
+.hero p{
+  max-width:600px;
+  font-size:18px;
+  color:#526857;
+}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  margin-right:10px;
+  padding:13px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.primary{background:#208b43;color:white}
+.secondary{background:white;color:#176332}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 7%;
+}
+.heading{text-align:center;margin-bottom:40px}
+.heading small{
+  color:#279148;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+h2{
+  font-size:38px;
+  color:#176332;
+  margin:8px 0;
+}
+.heading p{color:#607164}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+.card{
+  padding:30px;
+  border-radius:22px;
+  background:white;
+  box-shadow:0 8px 30px #174f2b18;
+}
+.card h3{
+  font-size:26px;
+  color:#176332;
+  margin:10px 0;
+}
+.icon{font-size:45px}
+.card p{color:#607164}
+.contoh{
+  margin-top:18px;
+  padding:15px;
+  border-radius:12px;
+  background:#eff9e8;
+}
+.dagusibu{
+  max-width:none;
+  background:#eff9e8;
+}
+.steps{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+.step{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+}
+.step b{
+  display:inline-block;
+  background:#dff5b8;
+  color:#176332;
+  padding:8px 12px;
+  border-radius:50%;
+}
+.step h3{
+  margin:15px 0 7px;
+  color:#176332;
+}
+.step p{font-size:14px;color:#607164}
+.tips{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+.tip{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 20px #174f2b12;
+}
+.tip b{color:#279148}
+.cta{
+  max-width:none;
+  text-align:center;
+  background:#176b38;
+  color:white;
+}
+.cta h2{color:white}
+.cta p{margin-top:10px}
+footer{
+  padding:30px;
+  text-align:center;
+  background:#0f4d28;
+  color:white;
+}
+
+@media(max-width:750px){
+  nav a{display:none}
+  .hero{margin-top:70px}
+  .cards,.steps,.tips{grid-template-columns:1fr}
+  section{padding:55px 6%}
+  h2{font-size:30px}
+}
+</style>
+</head>
+
+<body>
+
+<header id="beranda">
+<nav>
+<div class="logo">🌱 SAPA BUMI</div>
+<div>
+<a href="#tentang">Tentang</a>
+<a href="#sampah">Sampah</a>
+<a href="#dagusibu">DAGUSIBU</a>
+<a href="#tips">Tips</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="badge">🌍 Jaga lingkungan mulai dari diri sendiri</div>
+
+<h1>Sampah Pilah,<br><span>Ramah Bumi.</span></h1>
+
+<p>
+Yuk mulai dari hal kecil: kenali jenis sampah, pilah dengan benar,
+dan jaga lingkungan bersama untuk menciptakan bumi yang lebih bersih dan sehat.
+</p>
+
+<a href="#sampah" class="btn primary">Pelajari Sampah</a>
+<a href="#dagusibu" class="btn secondary">DAGUSIBU</a>
+</div>
+</header>
+
+<section id="tentang">
+<div class="heading">
+<small>TENTANG SAPA BUMI</small>
+<h2>Langkah kecil untuk bumi yang lebih baik</h2>
+<p>
+SAPA BUMI merupakan media edukasi tentang pemilahan sampah,
+pengelolaan lingkungan, serta penggunaan dan pembuangan obat yang benar.
+</p>
+</div>
+</section>
+
+<section id="sampah">
+<div class="heading">
+<small>PENGGOLONGAN SAMPAH</small>
+<h2>Kenali sebelum membuang</h2>
+<p>Pisahkan sampah sesuai jenisnya agar lebih mudah dikelola.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🍃</div>
+<h3>Sampah Organik</h3>
+<p>
+Sampah yang berasal dari makhluk hidup dan mudah terurai secara alami.
+</p>
+<div class="contoh">
+<b>Contoh:</b><br>
+Sisa makanan, daun kering, kulit buah,
+sayuran, ranting dan sisa tumbuhan.
+</div>
+</div>
+
+<div class="card">
+<div class="icon">♻️</div>
+<h3>Sampah Anorganik</h3>
+<p>
+Sampah yang sulit terurai secara alami dan sebagian dapat didaur ulang.
+</p>
+<div class="contoh">
+<b>Contoh:</b><br>
+Botol plastik, kaleng, kaca, kardus
+dan berbagai kemasan.
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="dagusibu" id="dagusibu">
+
+<div class="heading">
+<small>DAGUSIBU</small>
+<h2>Kelola obat dengan bijak</h2>
+<p><b>Dapatkan, Gunakan, Simpan, Buang</b> obat dengan benar.</p>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<b>01</b>
+<h3>DApatkan</h3>
+<p>
+Dapatkan obat di tempat yang resmi dan sesuai kebutuhan.
+Pastikan kemasan dan informasi obat jelas.
+</p>
+</div>
+
+<div class="step">
+<b>02</b>
+<h3>GUnakan</h3>
+<p>
+Gunakan obat sesuai aturan pakai, dosis,
+dan petunjuk tenaga kesehatan.
+</p>
+</div>
+
+<div class="step">
+<b>03</b>
+<h3>SImpan</h3>
+<p>
+Simpan obat sesuai petunjuk dan jauhkan
+dari jangkauan anak-anak.
+</p>
+</div>
+
+<div class="step">
+<b>04</b>
+<h3>BUang</h3>
+<p>
+Obat yang kedaluwarsa atau tidak digunakan
+lagi harus dibuang dengan cara yang tepat.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="tips">
+
+<div class="heading">
+<small>TIPS MEMILAH SAMPAH</small>
+<h2>Kebiasaan sederhana, dampak besar</h2>
+</div>
+
+<div class="tips">
+
+<div class="tip">🌱 <b>01</b> Pisahkan sampah organik dan anorganik sejak dari rumah.</div>
+
+<div class="tip">♻️ <b>02</b> Bersihkan kemasan yang dapat didaur ulang.</div>
+
+<div class="tip">🛍️ <b>03</b> Kurangi penggunaan barang sekali pakai.</div>
+
+<div class="tip">🔄 <b>04</b> Gunakan kembali barang yang masih layak.</div>
+
+<div class="tip">🚯 <b>05</b> Jangan membuang sampah ke sungai atau sembarang tempat.</div>
+
+<div class="tip">💚 <b>06</b> Ajak keluarga dan teman untuk ikut memilah sampah.</div>
+
+</div>
+</section>
+
+<div class="cta">
+<section>
+<h2>AYO BERSAMA 🌍</h2>
+<p>
+Mulai dari hal kecil untuk bumi yang lebih baik.
+</p>
+<p>
+<b>“Sampah pilah, lingkungan terjaga, hidup lebih sehat.”</b>
+</p>
+</section>
+</div>
+
+<footer>
+🌱 <b>SAPA BUMI</b><br>
+Sampah Pilah, Ramah Bumi
+</footer>
+
+</body>
+  </html>
